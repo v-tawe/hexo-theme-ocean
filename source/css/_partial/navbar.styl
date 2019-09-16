@@ -28,21 +28,20 @@
           .nav-item-link
             &::before
               content '\f12a'
-        &:nth-child(3)         // gallery
+        //&:nth-child(3)         // gallery
+        //  .nav-item-link
+        //    &::before
+        //      content '\f1a9'
+        &:nth-child(3)         // categories
           .nav-item-link
             &::before
-              content '\f1a9'
+              content '\f18c'
+        &:nth-child(4)         // tags
+          .nav-item-link
+            &::before
+              content '\f153'
 
-        //&:nth-child(4)         // categories
-        //  .nav-item-link
-        //    &::before
-        //      content '\f18c'
-        //&:nth-child(5)         // tags
-        //  .nav-item-link
-        //    &::before
-        //      content '\f153'
-
-        &:nth-child(4)         // about
+        &:nth-child(5)         // about
           .nav-item-link
             &::before
               content '\f174'
@@ -56,4 +55,3 @@
   text-align center
   img
     width brand-size
-

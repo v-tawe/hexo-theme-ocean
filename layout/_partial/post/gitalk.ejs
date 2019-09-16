@@ -9,11 +9,16 @@
       clientSecret: '<%- theme.gitalk.clientSecret %>',
       repo: '<%- theme.gitalk.repo %>',
       owner: '<%- theme.gitalk.owner %>',
+      //admin: "<%- theme.gitalk.admin %>",
       admin: ['<%- theme.gitalk.admin %>'],
       // id: location.pathname,      // Ensure uniqueness and length less than 50
       id: md5(location.pathname),
-      distractionFreeMode: false,  // Facebook-like distraction free mode
-      pagerDirection: 'last'
+      //labels: "<%- theme.gitalk.labels %>",
+      //perPage: '<%- theme.gitalk.perPage %>',
+      //pagerDirection: '<%- theme.gitalk.pagerDirection %>',
+      //createIssueManually: '<%- theme.gitalk.createIssueManually %>',
+      //distractionFreeMode: '<%- theme.gitalk.distractionFreeMode %>'
+      distractionFreeMode: false
     })
 
   gitalk.render('gitalk-container')

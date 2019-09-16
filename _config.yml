@@ -1,11 +1,12 @@
 # Menu
 menu:
-  Home: /
-  Archives: /archives
-  Gallery: /gallery
-  About: /about
+  主页: /
+  归档: /archives
+  #相册: /gallery
+  分类: /categories
+  标签: /tags
+  关于: /about
 rss: /atom.xml
-
 
 # Miscellaneous
 favicon: /favicon.ico
@@ -15,13 +16,12 @@ brand: /images/hexo.svg
 # Because I put videos in multiple formats on the same path, I just labeled the path here.
 ocean:
   overlay: true
-  path: /images/ocean/
-  brand: /images/hexo-inverted.svg
+  path: /images/ocean/                 # Video storage path, formats: mp4/ogg/webm
+  brand: /images/hexo-inverted.svg     # Optional, a small logo
 
 # Content
 excerpt_link: Read More...
 share_text: Share
-search_text: Search
 nav_text:
   page_prev: Prev page
   page_next: Next page
@@ -29,7 +29,7 @@ nav_text:
   post_next: Olde posts
 
 # Tags
-show_count: false
+show_count: true
 
 # Toc
 toc: true
@@ -37,11 +37,19 @@ toc: true
 # fancybox
 fancybox: true
 
+# Local search
+search_text: Search
+
 # Gitalk
 gitalk:
-  enable: false # true
-  clientID: # GitHub Application Client ID
-  clientSecret: # Client Secret
-  repo: # Repository name
-  owner: # GitHub ID
-  admin: # GitHub ID
+  enable: true                                                    # true
+  clientID: 6ebde0f637818be095cd                                  # GitHub Application Client ID
+  clientSecret: cbe68a3c54887cd97f7357cfdc5b861be6ce3b2b          # Client Secret
+  repo: gitalk                                                    # Repository name
+  owner: v-tawe                                                   #这个项目名的拥有者（GitHub账号或组织）
+  admin: v-tawe                                                   #管理员用户，下文也会详细讲
+#  labels: "['Gitalk']"                                            #GitHub issues的标签，下面会详细说
+#  perPage: 15                                                     #每页多少个评论
+#  pagerDirection: last                                            #排序方式是从旧到新（first）还是从新到旧（last）
+#  createIssueManually: true                                       #如果当前页面没有相应的 isssue ，且登录的用户属于 admin，则会自动创建 issue。如果设置为 true，则显示一个初始化页面，创建 issue 需要点击 init 按钮。
+#  distractionFreeMode: false                                      #是否启用快捷键(cmd|ctrl + enter) 提交评论.
